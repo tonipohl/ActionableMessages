@@ -1,0 +1,115 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "speak": "<s>Order today´s menu<break strength='weak'/> at the cafeteria</s><s>More description...</s>",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Lunch options",
+            "size": "Large",
+            "weight": "Bolder",
+            "wrap": true,
+            "style": "heading"
+        },
+        {
+            "type": "TextBlock",
+            "text": "What would you like to order today?",
+            "wrap": true
+        },
+        {
+            "type": "ImageSet",
+            "images": [
+                {
+                    "type": "Image",
+                    "url": "https://<some-storage-account>.blob.core.windows.net/images/schnitzel.jpg ",
+                    "altText": "Tastes great!",
+                    "size": "Medium"
+                },
+                {
+                    "type": "Image",
+                    "url": "https://<some-storage-account>.blob.core.windows.net/images/pasta.jpg",
+                    "altText": "Fussili is always a good choice",
+                    "size": "Medium"
+                },
+                {
+                    "type": "Image",
+                    "url": "https://<some-storage-account>.blob.core.windows.net/images/vegan.jpg",
+                    "altText": "Some healthy salad",
+                    "size": "Medium"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "If you have any special wishes pls. add them here:",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "id": "Comment",
+            "placeholder": "special requests..."
+        },
+        {
+            "type": "TextBlock",
+            "text": "Submit your menu wish.",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Execute",
+                    "title": "Menu 1 (Schnitzel)",
+                    "method": "POST",
+                    "url": "<postbackurl>",
+                    "body": "{'Comment':'{{Comment.value}}','Menu':'1','RequestID':'<RequestID>'}",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "Authorization",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "type": "Action.Http",
+                    "title": "Menu 2 (Pasta)",
+                    "method": "POST",
+                    "url": "<postbackurl>",
+                    "body": "{'Comment':'{{Comment.value}}','Menu':'2','RequestID':'<RequestID>'}",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "Authorization",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "type": "Action.Http",
+                    "title": "Menu 3 (Vegan)",
+                    "method": "POST",
+                    "url": "<postbackurl>",
+                    "body": "{'Comment':'{{Comment.value}}','Menu':'3','RequestID':'<RequestID>'}",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "Authorization",
+                            "value": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

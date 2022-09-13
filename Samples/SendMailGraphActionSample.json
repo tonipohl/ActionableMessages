@@ -1,0 +1,16 @@
+{
+    "message": {
+        "subject": "Please submit",
+        "body": {
+            "contentType": "HTML",
+            "content": "<HTMLBody>"
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "address": "<some-emailAddress>"
+                }
+            }
+        ]
+    }
+}

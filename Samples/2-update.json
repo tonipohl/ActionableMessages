@@ -1,0 +1,45 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "Container",
+            "padding": "None",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Thank your for your order ",
+                    "wrap": true
+                },
+                {
+                    "type": "ImageSet",
+                    "images": [
+                        {
+                            "type": "Image",
+                            "url": "[imageurl]",
+                            "altText": "Food",
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Comment: [comment]",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Comment: [comment]",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Comment: [comment]",
+                    "wrap": true
+                }
+            ]
+        }
+    ],
+    "padding": "None"
+}
