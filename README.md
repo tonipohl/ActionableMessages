@@ -1,6 +1,6 @@
 # Actionable Messages for Outlook and Teams
 
-Outlook Actionable Messages is a simple and powerful declarative layout format with adaptive cards that offer a lot of flexibility and allow for visually rich cards. This repository includes samples for the session "Use Outlook Actionable Messages and Take Action in Outlook" held together with [@magrom](http://twitter.com/magrom) at [Microsoft Exchange Community Airlift](https://mecairlift.event.microsoft.com/ ) in September 2022. Also, thanks to [@cwilfing](http://twitter.com/cwilfing) for his support for sending via Graph and reacting.  
+Outlook Actionable Messages is a simple and powerful declarative layout format with adaptive cards that offer a lot of flexibility and allow for visually rich cards. This repository includes samples for the session "Use Outlook Actionable Messages and Take Action in Outlook" held together with [@magrom](http://twitter.com/magrom) at [Microsoft Exchange Community Airlift](https://mecairlift.event.microsoft.com/ ) in September 2022. Thanks to [@cwilfing](http://twitter.com/cwilfing) for his support for sending AM via Graph and the refresh logic.  
 
 ## Samples
 
